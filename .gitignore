@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.egg
+*.whl
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets
+.env
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Datasets — large, licensed separately, and not needed to run the app.
+# The model is trained against the IMDB Dataset CSV; see README for how to get it.
+*.csv
+archive.zip
+
+# Trained artifacts. model.pkl and vectorizer.pkl are intentionally NOT ignored:
+# the app needs them to run without a training step on first launch. Retrain
+# with `python train.py` and commit the result.
+# *.pkl
+# *.h5
+# *.hdf5
